@@ -27,10 +27,22 @@ $(document).ready(function () {
 
 // copy start
 const rek1 = document.getElementById("rek1");
+const rek2 = document.getElementById("rek2")
 const salin1 = document.getElementById("salin1");
+const salin2 = document.getElementById("salin2");
 
 salin1.onclick = () => {
   rek1.select(); // Selects the text inside the input
+  document.execCommand("copy"); // Simply copies the selected text to clipboard
+  Swal.fire({
+    icon: "success",
+    title: "No. Rekening Berhasil di Salin",
+    showConfirmButton: false,
+    timer: 1000,
+  });
+};
+salin2.onclick = () => {
+  rek2.select(); // Selects the text inside the input
   document.execCommand("copy"); // Simply copies the selected text to clipboard
   Swal.fire({
     icon: "success",
