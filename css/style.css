@@ -62,7 +62,7 @@
   outline: none;
 }
 
-@media (max-width: 640px) {
+/*@media (max-width: 640px) {
   h1 {
     font-size: 1.5rem !important;
   }
@@ -73,6 +73,30 @@
     padding-top: 40%;
     height: 100vh;
     background-image: url(../img/background-1.jpg); background-size: cover;
+  }
+}*/
+
+@media (max-width: 640px) {
+  #front-image {
+    display: none;
+  }
+
+  #front-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* semua isi turun */
+    height: 100vh;
+
+    padding-bottom: 80px; /* jarak dari bawah */
+    padding-top: 0;
+
+    background-image: url(../img/background-1.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  h1 {
+    font-size: 1.5rem !important;
   }
 }
 
