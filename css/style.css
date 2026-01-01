@@ -87,7 +87,7 @@
     justify-content: flex-end; /* semua isi turun */
     height: 100vh;
 
-    padding-bottom: 500px; /* jarak dari bawah */
+    padding-bottom: 250px; /* jarak dari bawah */
     padding-top: 0;
 
     background-image: url(../img/background-1.jpg);
